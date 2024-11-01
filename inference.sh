@@ -1,0 +1,1 @@
+python main.py --config configs/stag4d.yaml path=dataset/minions save_path=minions
