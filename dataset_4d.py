@@ -31,7 +31,7 @@ class SparseDataset:
 
     def collate_ref(self,index):
         #print(index,str(index))
-        file = os.path.join(self.path,'ref/{}_rgba.png'.format(str(index)))
+        file = os.path.join(self.path,'ref/{:02d}_rgba.png'.format(index))
         #print(f'[INFO] load image from {file}...')
 
         img = cv2.imread(file, cv2.IMREAD_UNCHANGED)
@@ -54,7 +54,7 @@ class SparseDataset:
                 
     def collate_zero123(self,index):
 
-        self.pattern=os.path.join(self.path,'zero123/{}_rgba/*.png'.format(str(index)))
+        self.pattern=os.path.join(self.path,'zero123/{:02d}_rgba/*.png'.format(index))
         self.input_imgs=[]
         self.input_masks=[]
         file_list = glob.glob(self.pattern)

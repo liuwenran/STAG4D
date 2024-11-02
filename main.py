@@ -206,11 +206,11 @@ class GUI:
 
         ## load multiview reference images
         for i in np.arange(len(self.ref_view_batch)):
-                self.input_img =   self.ref_view_batch[i]
-                self.input_mask =  self.input_mask_batch[i]
-                self.input_imgs =  self.zero123_view_batch[i]
-                self.input_masks = self.zero123_masks_batch[i]
-                self.prepare_image(i)
+            self.input_img =   self.ref_view_batch[i]
+            self.input_mask =  self.input_mask_batch[i]
+            self.input_imgs =  self.zero123_view_batch[i]
+            self.input_masks = self.zero123_masks_batch[i]
+            self.prepare_image(i)
 
 
     def train_step(self):

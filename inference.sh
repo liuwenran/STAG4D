@@ -1,1 +1,1 @@
-python main.py --config configs/stag4d.yaml path=dataset/minions save_path=minions
+python main.py --config configs/stag4d.yaml path=dataset/vroidhub_red save_path=vroidhub_red
